@@ -1,4 +1,7 @@
-baseURL = "https://example.org/"
-languageCode = "en-us"
-title = "Phát triển ứng dụng web"
-theme = "hugo-product-launch-master"
+
+    baseURL = "https://example.org/"
+    languageCode = "en-us"
+    title = "LamBlogSpot"
+    theme = "beautifulhugo-master"
+    
+

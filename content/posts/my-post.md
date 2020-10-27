@@ -1,7 +1,7 @@
 ---
 title: "Phát triển ứng dụng web"
 date: 2020-09-29T17:33:37+07:00
-
+author: "Lâm"
 ---
 ---
 
@@ -103,3 +103,148 @@ Một số trang web tham khảo:
 – blogspot.com
 
 – biz.nf
+
+/static
+
+## Lab 3. Đăng ký tên miền có phí
+
+### 1. Tại sao nên đăng kí tên miền có phí?
+
+Một số lý do:
+
+– Tên miền miễn phí chỉ sử dụng được trong một khoảng thời gian nhất định, có thể bị mất bất cứ khi nào
+
+– Tên miền miễn phí không nhận được hỗ trợ kĩ thuật
+
+### 2. Khảo sát bảng giá khi đăng kí tên miền có phí từ 6 nhà cung cấp dịch vụ (3 nhà cung cấp trong nước, 3 nhà cung cấp nước ngoài)?
+
+
+### 3. Liệt kê các bước (thủ tục) để có thể đăng kí tên miền có phí?
+
+### Lab 4. Web server:
+## Web server:
+- Web Client là một chương trình có thể giao tiếp với Web Server, gửi yêu cầu và nhận thông tin từ Web Server, sau đó xử lý các thông tin nhận được để hiển thị hoặc phục vụ các mục đích khác. Trình duyệt chính là một Web Client.
+
+- Web Server là một máy tính, cung cấp các dịch vụ WWW trên Internet. Web Server gồm có: phần cứng, hệ điều hành, phần mềm Web Server, và nội dung của website.
+
+Theo wiki (https://en.wikipedia.org/wiki/Web_server), đôi khi khái niệm Web Server còn được sử dụng để chỉ một phần mềm, mà nó hiện thực hóa giao thức HTTP (ví dụ, phần mềm Web Server).
+
+### Img
+
+Diễn giải hình trên:
+
+- Nhà phát triển web (Web Developer) thiết kế và lập trình ra Website
+
+- Sau khi tạo ra Website, Web Developer sẽ đăng kí một tên miền có tên www.test.com, thuê một không gian đĩa cứng trên Web Server để đặt Website của mình
+
+- Dùng giao thức FTP để chuyển Website (từ máy cục bộ) lên Web Server
+
+- Cuối cùng, người dùng (client) có thể truy cập đến trang www.test.com bằng cách gõ vào trình duyệt đường dẫn (URL) là http://www.test.com và bấm Enter
+
+- Trình duyệt sẽ gửi một HTTP REQUEST tới Web Server để yêu cầu nội dung trang web
+
+- Web Server sẽ gửi nội dung trang web (HTML) về cho trình duyệt bằng HTTP RESPONSE
+
+Như vậy, chức năng của Web Server là: lưu trữ, xử lý và cung cấp trang web tới người dùng. Giao thức được sử dụng để giao tiếp giữa Web Server và Web Client là HTTP hoặc HTTPS.
+
+Phần dưới đây sẽ tìm hiểu về các thành phần liên quan đến Web Server, gồm: phần cứng, hệ điều hành, phần mềm Web Server, và nội dung của Website.
+
+## Phần cứng của Web Server
+
+Web Server là một máy chủ, có tốc độ xử lý cao, có khả năng lưu trữ nhiều dữ liệu, được bảo mật tốt, luôn luôn ở trạng thái hoạt động.
+
+Theo trang web này http://help.sana-commerce.com/sana-commerce-83/installation/setup-web-and-database-server/hardware-requirements-for-web-and-database-servers thì, yêu cầu về phần cứng của Web Server phụ thuộc vào nhiều yếu tố, ví dụ: lượng người truy cập, kích thước của cơ sở dữ liệu, loại ứng dụng web.
+
+Tuy nhiên, cấu hình phần cứng của Web Server có thể chỉ cần ở mức sau: bộ xử lý 2 x 1,6 GHz, RAM 3.5 GB, đĩa cứng 80GB.
+
+## Hệ điều hành của Web Server
+
+Vì Web Server có thể là một máy chủ, hoặc là một phần mềm, nên có thể sử dụng rất nhiều hệ điều hành khác nhau, từ các hệ điều hành nhúng trong các thiết bị (máy in, router), cho tới các hệ điều hành thuộc các họ hệ điều hành khác nhau (ví dụ: Windows, Unix, Linux).
+
+## Phần mềm Web Server
+
+Có nhiều phần mềm Web Server đang được sử dụng hiện nay, ví dụ: Apache, Nginx, IIS, GWS. Bảng dưới đây là thị phần của các phần mềm này, năm 2016 (nguồn: https://en.wikipedia.org/wiki/Web_server).
+
+### Img
+
+## Nội dung của Website trên Web Server
+
+Nội dung của Website bao gồm toàn bộ tài nguyên giúp cho Website hoạt động. Ví dụ, mã nguồn trang web, hình ảnh, âm thanh, video, cơ sở dữ liệu.
+
+
+Hình sau là một ví dụ về các thành phần của một Web Server (nguồn: https://en.wikipedia.org/wiki/LAMP_(software_bundle))
+
+### Img
+
+### Lab 5: Tự dựng một web server
+
+### Lab 6: Tìm hiểu về các loại hosting sau? Ưu và nhược điểm của mỗi loại?
+## Shared Hosting: 
+Shared Hosting được hiểu là một dịch vụ của web hosting nơi mà có rất nhiều website nằm trong một web server được kết nối với internet, bạn có thể hình dung rằng một nhà cung cấp hosting sẽ có một máy chủ đặt trong trung tâm dữ liệu, nhà cung cấp sẽ chia nhỏ các tài nguyên có trong máy chủ để phục vụ người dùng. Nếu website của các bạn không quá nặng thì đây là một sự lựa chọn tuyệt vời cho các bạn vì giá thành của nó khá rẻ so với các dịch vụ khác.
+
+# Đánh giá:
+Ưu điểm
+Giá thành rẻ hơn khá nhiều so với các dịch vụ khác
+Không quá khó khăn để quản lí được dịch vụ này, nó không đòi hỏi bạn phải có quá nhiều kiến thức liên q
+uan.
+Nhược điểm
+Do có giới hạn về dung lượng sử dụng nên cấu hình của nó không được cao
+Do có nhiều người cùng sử dụng trên một máy chủ nên dễ bị tấn công cục bộ nếu nó không được bảo mật cao
+Nếu tài nguyên của máy chủ phân chia một cách không hợp lí sẽ dẫn đến việc có website chạy nhanh, có website chạy chậm, nếu một website có lượng truy cập lớn thì cá website còn lại sẽ bị chậm.
+
+## VPS Hosting:
+VPS là chữ viết tắt của Virtual Private Server – máy chủ ảo cá nhân. VPS hosting là một trong các dịch vụ hosting phổ biến nhất để bạn có thể sử dụng làm nền tảng cho website. Nó dùng công nghệ ảo hóa để tạo tài nguyên riêng trên server cho bạn sử dụng để tách biệt tài nguyên đó khỏi dùng chung với các người dùng khác cùng server vật lý.
+
+Nó an toàn hơn và ổn định hơn so với shared hositng vì bạn không phải chia sẽ không gian lưu trữ với người khác mà được dùng riêng. Và nó cũng rẻ hơn là thuê hẵn một server riêng.
+
+VPS hosting thường được chọn bởi nhiều chủ sở hữu website với lượng truy cập trung bình mà đã vượt giới hạn shared hosting nhưng vẫn chưa cần đến tài nguyên lớn của server riêng.
+
+# Đánh giá:
+Ưu điểm
+Nhanh và đáng tin cậy hơn server shared hosting.
+Vì được đảm bảo về thông số server như bộ nhớ và sức mạnh vi xử lý, bạn sẽ không gặp phải vấn đề tài nguyên bị người khác dùng hết.
+Các vấn đề về lượng truy cập đột biến tăng cao không ảnh hưởng đến site của bạn.
+Bạn có quyền superuser (root) trên server.
+Có độ riêng tư cao hơn, vì files và databases bị khóa khỏi hệ thống server của các người dùng khác.
+Dễ dàng nâng cấp. Ngay khi website tăng trưởng, bạn chỉ cần nâng cấp gói hosting để nâng tài nguyên lên mà không phải tốn công chuyển dữ liệu hay chuyển server (RAM, CPU, disk space, bandwidth, etc.).
+Nhược điểm
+Đặt hơn shared hosting.
+Nó cần nhiều kiến thức kỹ thuật để quản lý hơn.
+Cấu hình server không đúng có thể tạo ra lỗ hổng bảo mật.
+
+## Cloud Hosting: 
+Cloud Hosting là gì ? Cloud Hosting là một thuật ngữ mới ám chỉ dịch vụ Hosting vận hành trên nền công nghệ điện toán đám mây (Cloud computing)
+
+Thực chất về mặt vật lý Cloud Hosting hoạt động tương tự các loại Web Hosting hiện nay, Cloud Hosting cũng sử dụng các control panel quản lý Hosting như DirectAdmin, cũng cấu hình và thiết lập tính năng như Web Hosting tuy nhiên có 1 điểm khác biệt duy nhất giữa Cloud Hosting so với Web Hosting là Cloud Hosting chạy trên các máy chủ Cloud (Cloud Server / Cloud VPS).
+
+Cloud Hosting được hoạt động trên nền công nghệ điện toán đám mây (Cloud computing), sử dụng nền tảng máy chủ tốt nhất của các hãng máy chủ lớn trên thế giới như Cisc cùng với hệ thống lưu trữ Cloud Storage với nguyên tắc lưu trữ phân tán, hoạt động trên hệ điều hành CloudLinux và hơn hết nó sử dụng công nghệ cân bằng tải (Load Balancing) giữa các máy chủ với nhau tạo ra tốc độ truy xuất nhanh hơn nhiều so với các loại Web Hosting thông thường, an toàn, bảo mật dữ liệu cũng cao hơn cũng như giảm tối đa khả năng Downtime cho Website.
+
+Cloud Hosting là gìCloud Hosting hoạt động dựa trên công nghệ tiên tiến nhất trên thế giới hiện nay cho phép không giới hạn số lượng Máy Chủ sử dụng cho một Website hoặc một hệ thống các Website. Cloud Hosting có lợi thế đáng kể so với các giải pháp lưu trữ truyền thống hiện nay như việc sử dụng tài nguyên và bảo mật của một Website lưu trữ trên đám mây luôn được đảm bảo trên nhiều máy chủ thay vì chỉ một như trước đây. Công nghệ điện toán đám mây cũng giúp loại bỏ bất kỳ giới hạn vật lý nào cho sự phát triển và làm cho giải pháp lưu trữ dữ liệu trở nên cực kỳ linh hoạt. Mức độ ổn định của hệ thống Cloud Hosting so với Hosting truyền thống lên tới 300%.
+
+## WordPress Hosting: 
+WordPress là một phần mềm mã nguồn mở (miễn phí) được viết bằng ngôn ngữ PHP và hệ quản trị cơ sở dữ liệu MySQL. Phần mềm quản lý nội dung(CMS) mà bạn có thể sử dụng để tạo ra các trang web.
+Nói một cách đơn giản đó là một công cụ giúp bạn làm một trang web, blog hoặc tin tức cho riêng bạn. Và đây là một trong những CMS tốt nhất bạn có thể chọn sử dụng để tạo trang web cho riêng mình.
+WordPress được phát triển nhằm phục vụ đối tượng người dùng phổ thông. Không cần có quá nhiều kiến thức về lập trình hay website nâng cao. Vì các thao tác trong WordPress rất đơn giản. Giao diện quản trị trực quan, giúp bạn có thể nắm rõ cơ cấu quản lý một website WordPress trong thời gian ngắn.
+Nhưng WordPress cũng đủ mạnh và linh hoạt để phục vụ cho những ai đã am hiểu công nghệ.  Hoặc chạy trang web cho việc kinh doanh.
+Nếu bạn đang muốn bắt đầu tạo lập một trang Web, hay Blog thì WordPress chính là sự lựa chọn thích hợp.
+Đây cũng là sự lựa chọn của hơn 25% trong mười triệu trang web hàng đầu hiện nay. Các trang web nổi tiếng thế giới như: echCrunch, Mashable, CNN, BBC America, Variety, Sony Music, MTV News, Bata, Quartz….
+
+# Đánh giá: 
+Ưu điểm:
+Chi phí phù hợp hoàn hảo cho các doanh nghiệp vừa và nhỏ.
+Thích hợp cho những người mới tạo và quản lý trang web.
+Máy chủ chia sẻ không giới hạn ở WordPress.
+Plugin vô hạn.
+Dễ dàng lắp đặt và tùy biến với cPanel.
+Nhược điểm:
+Máy chủ chia sẻ có nghĩa là chia sẻ tài nguyên với các trang web khác trên máy chủ đó.  Và tài nguyên được chia sẻ càng lớn thì tốc độ chạy càng chậm.
+Bạn có thể có ít hỗ trợ kỹ thuật chuyên biệt hơn. Tuy nhiên, như đã nói ý ở trên, nếu bạn tìm kiếm đúng nhà cung câp. Điều này không phải là một vấn đề.
+
+## Dedicated Hosting: 
+Dedicated server là máy chủ chạy trên một chiếc máy tính vật lý, giống như máy bàn nhưng có những thiết bị hỗ trợ đặc biệt như: HDD (hoặc SSD), CPU, RAM, Card mạng, nguồn diện dự phòng. Đồng thời hiện tại đang có hình thức SSD Dedicated server mạnh mẽ được nhiều người ưa chuộng áp dụng từ các đơn vị dịch vụ cho thuê.
+Ưu điểm:
+– Khách hàng có toàn quyền cài đặt và cấu hình theo nhu cầu. Giống như là Administrator trên chiếc máy để bàn của họ.
+Nhược điêm:
+– Giá khá cao.
+
+– Khách hàng phải người am hiểu về hệ điều hành tương ứng, cùng nhiều kiến thức về mạng, phần mềm, bảo mật. Họ sẽ phải cài đặt từ A đến Z, ví dụ như: cài Web server, FTP Server, dịch vụ DNS (Domain Name Server), cấu hình nhiều thông số khác nhau. Một người quản trị có tay nghề thấp có thể sẽ dẫn đến nhiều hậu quả nghiêm trọng. Tóm lại họ phải làm tất tần tật mọi thứ và trách nhiệm rất lớn lao.
