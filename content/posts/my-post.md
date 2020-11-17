@@ -1,9 +1,13 @@
----
-title: "Phát triển ứng dụng web"
-date: 2020-09-29T17:33:37+07:00
-author: "Lâm"
----
----
++++
+title = "Các bài lab môn phát triển ứng dụng web"
+date = "2020-09-22"
+author = "Lam"
+cover = ""
+tags = ["ptudweb", ""]
+keywords = ["", ""]
+description = ""
+showFullContent = false
++++
 
 ## Lab 1. Hiểu về DNS
 ### 1. DNS là viết tắt của các chữ nào? 
@@ -248,3 +252,36 @@ Nhược điêm:
 – Giá khá cao.
 
 – Khách hàng phải người am hiểu về hệ điều hành tương ứng, cùng nhiều kiến thức về mạng, phần mềm, bảo mật. Họ sẽ phải cài đặt từ A đến Z, ví dụ như: cài Web server, FTP Server, dịch vụ DNS (Domain Name Server), cấu hình nhiều thông số khác nhau. Một người quản trị có tay nghề thấp có thể sẽ dẫn đến nhiều hậu quả nghiêm trọng. Tóm lại họ phải làm tất tần tật mọi thứ và trách nhiệm rất lớn lao.
+
+### Lab 7: 
+## Dung lượng lưu trữ (Disk Page):
+Là một trong các thông số kỹ thuật quan trọng đối với Web Hosting mà mọi người cần phải biết. Nó đại diện cho khả năng lưu trữ dữ liệu trên Website, nếu dung lượng lưu trữ đã dùng hết, Website sẽ vận hành chậm chạp thậm chí không thể vận hành. Nếu rơi vào trường hợp này tốt hơn hết là người dùng nâng cấp dung lượng lưu trữ.
+
+## Băng thông (Bandwith): 
+Băng thông Website là một khái niệm mô tả lượng dữ liệu thông qua Website được phép truyền tải trong một thời gian nhất định (tải lên khi chỉnh sửa, thiết kế mới và đưa dữ liệu vào Web; tải xuống khi người dùng lướt Web và thực hiện các hành vi liên quan đến đọc dữ liệu). Nếu băng thông Web đã gần hết hoặc đã hết thì tốc độ truy cập Website từ người dùng sẽ rất chậm hoặc gần như không thể.
+
+## Cơ chế bảo mật, sao lưu và phục hồi dữ liệu:
+Cơ chế bảo mật của server như thế nào (loại máy chủ sử dụng, công nghệ bảo mật đang dùng, cơ chế bảo mật là cứng (thiết bị) hay mềm (soft)…, bên cạnh đó cơ chế sao lưu và phục hồi dữ liệu khi xảy ra sự cố (đối với các máy chủ share Hosting vật lý truyền thống thì vấn đề này là tối quan trọng). Thông dụng và tốt nhất hiện nay là sao lưu 1 tuần/lần được áp dụng tại DIGISTAR, Mắt Bão, PA, Nhân Hòa… cần lưu ý nếu một ngày một lần sao lưu dữ liệu thì vừa tốn kém chi phí mà vừa không bảo mật (một nghịch lý trong ngành lưu trữ máy chủ Hosting).
+
+## Phần mềm hỗ trợ kèm theo:
+Thường là các phần mềm quản lý việc tải lên (upload) hoặc tải dữ liệu xuống máy tính người dùng (download), thông dụng là Direct Admin, cPanel, Kloxo nếu là máy chủ Hosting linux còn đối với máy chủ Hosting window là Plesk, Ecompak…
+
+## Tương thích mã nguồn thông dụng:
+Các mã nguồn phổ biến có được hỗ trợ không (joomla các phiên bản, wordpress các phiên bản, magento, nukeviet, vbb, xenforo… Tuyệt vời nếu hỗ trợ thêm các phiên bản mã nguồn mới xuất hiện hiện nay như Drupal, Python, Perl…
+
+## Tương thích phiên bản lập trình:
+Gói dịch vụ Hosting của nhà cung cấp tương thích với phiên bản lập trình nào (ASP, ASP.NET, PHP 5.1, PHP 5.2, …), cũ hay mới (ví dụ PHP 4x hay 5x, ASP hay ASP.NET…). Và sẽ thật tuyệt vời nếu nhà cung cấp cho phép tùy biến phiên bản lập trình như DIGISTAR.
+
+### Lab 8. Shared hosting miễn phí
+
+### Lab 9. Shared hosting có phí
+“Shared hosting trả phí” có nhiều thành phần và dịch vụ để cấu hình hơn so với “shared hosting miễn phí”. Tuy nhiên, cách đưa một website lên hosting thì tương tự.
+
+### Lab 10. Tải và cài đặt Git:
+### Img 3 kiểu luôn
+
+### Lab 11. Cấu hình môi trường làm việc cho Git:
+### Img Hình gitconfig
+
+### Lab 12. Hiểu về Working Directory, Staging Area và Git Directory:
+
