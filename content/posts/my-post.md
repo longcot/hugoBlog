@@ -133,7 +133,7 @@ Một số lý do:
 
 Theo wiki (https://en.wikipedia.org/wiki/Web_server), đôi khi khái niệm Web Server còn được sử dụng để chỉ một phần mềm, mà nó hiện thực hóa giao thức HTTP (ví dụ, phần mềm Web Server).
 
-### Img
+- {{< figure src="/images/WebServer.jpg" title="Web Server">}}
 
 Diễn giải hình trên:
 
@@ -169,7 +169,7 @@ Vì Web Server có thể là một máy chủ, hoặc là một phần mềm, n�
 
 Có nhiều phần mềm Web Server đang được sử dụng hiện nay, ví dụ: Apache, Nginx, IIS, GWS. Bảng dưới đây là thị phần của các phần mềm này, năm 2016 (nguồn: https://en.wikipedia.org/wiki/Web_server).
 
-### Img
+- {{< figure src="/images/PhanMemWebServer.PNG" title="PhanMenWebServer">}}
 
 ## Nội dung của Website trên Web Server
 
@@ -279,9 +279,14 @@ Gói dịch vụ Hosting của nhà cung cấp tương thích với phiên bản
 
 ### Lab 10. Tải và cài đặt Git:
 ### Img 3 kiểu luôn
+- {{< figure src="/images/gitVersion.PNG" title="Git Version">}}
+- {{< figure src="/images/gitVersionPS.PNG" title="Git Version PS">}}
+- {{< figure src="/images/getVersionGB.PNG" title="Git Version GB">}}
+- {{< figure src="/images/gitCommit.PNG" title="Git Commit">}}
+- {{< figure src="/images/gitInit&Clone.PNG" title="Git Init n Clone">}}
+- {{< figure src="/images/gitPush.PNG" title="Git Push">}}
 
 ### Lab 11. Cấu hình môi trường làm việc cho Git:
-### Img Hình gitconfig
-
+- {{< figure src="/images/gitconfig.PNG" title="Git Config">}}
 ### Lab 12. Hiểu về Working Directory, Staging Area và Git Directory:
 
